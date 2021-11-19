@@ -1,0 +1,421 @@
+@charset 'utf-8';
+@import url('css/font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'notosanskr';
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+/* 공통 영역 */
+.wrap {
+    position: relative;
+    display: block;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 110rem;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+/* 상단영역 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    z-index: 999;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+}
+
+.header .container {}
+
+.logo {
+    position: absolute;
+    top: 2.1rem;
+    left: 0;
+    display: block;
+}
+
+.nav-menu {
+    position: relative;
+    display: block;
+}
+
+.menu-list {
+    position: absolute;
+    top: 3.2rem;
+    left: 20rem;
+    display: block;
+}
+
+.menu-list li {
+    float: left;
+}
+
+.menu-list li a {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-right: 5rem;
+}
+
+.sub-list {
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    display: block;
+}
+
+.sub-list li {
+    float: left;
+}
+
+.sub-list li a {
+    font-family: 'Noto Sans KR';
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    margin-right: 2.9rem;
+}
+
+/* 비주얼영역 */
+.visual {
+    position: relative;
+    width: 100%;
+    height: 80rem;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    z-index: 1;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sw-visual {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.v1 {
+    background: url('../images/banner_main1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.v2 {
+    background: url('../images/banner_main2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.v3 {
+    background: url('../images/banner_main3.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.v4 {
+    background: url('../images/banner_main4.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.v5 {
+    background: url('../images/banner_main5.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.v6 {
+    background: url('../images/banner_main6.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.nation-prev {}
+
+.nation-next {}
+
+/* 구매영역 */
+.buy {
+    position: relative;
+    display: block;
+}
+
+.buy .container {
+    height: 60rem;
+}
+
+.buy-box-1 {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    display: block;
+    width: 53rem;
+    height: 30rem;
+    background: url('../images/banner2_1.jpg') no-repeat;
+}
+
+.b-tit {
+    position: absolute;
+    top: 33.6rem;
+    left: 0;
+    display: block;
+    font-family: 'Noto Sans KR';
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #393839;
+}
+
+.b-line {
+    position: absolute;
+    top: 39rem;
+    left: 0;
+    display: block;
+    width: 53rem;
+    height: 0.2rem;
+    background-color: #b3b3b3;
+}
+
+.b-txt {
+    position: absolute;
+    top: 41.7rem;
+    left: 0;
+    display: block;
+    font-family: 'Noto Sans KR';
+    font-size: 1.5rem;
+    line-height: -0.2;
+    font-weight: 500;
+    color: #6e6e6e;
+    letter-spacing: -0.045em;
+}
+
+.buy-box-2 {
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    display: block;
+    width: 53rem;
+    height: 30rem;
+    background: url('../images/banner2_2.jpg') no-repeat;
+}
+
+/* 배너영역 */
+.banner {
+    position: relative;
+    display: block;
+    background: url('../images/banner3.jpg') no-repeat center;
+    height: 32rem;
+}
+
+.banner-tit {
+    position: absolute;
+    top: 10.9rem;
+    left: 6.3rem;
+    display: block;
+    font-family: 'Noto Sans KR';
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.banner-box {
+    position: absolute;
+    display: block;
+    top: 16.9rem;
+    left: 6.5rem;
+    width: 15.6rem;
+    height: 4.6rem;
+    border: 0.2rem solid #cd9834;
+    font-size: 1.8rem;
+    font-family: 'Noto Sans KR';
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2;
+}
+
+/* 아이콘영역 */
+.icon {
+    position: relative;
+    display: block;
+    height: 22rem;
+}
+
+.icon .container {
+    position: relative;
+    display: block;
+    margin-top: 10rem;
+}
+
+.icon-img {
+    position: relative;
+    display: block;
+}
+
+.icon-box1 {
+    position: absolute;
+    top: 0.7rem;
+    left: 9rem;
+    display: block;
+    width: 8rem;
+    height: 8.2rem;
+    background: url('../images/link_icon.png') no-repeat;
+    transform: translate(0px, 0px);
+}
+
+.icon-box2 {
+    position: absolute;
+    top: 0.1rem;
+    left: 35.5rem;
+    display: block;
+    width: 8rem;
+    height: 8.2rem;
+    background: url('../images/link_icon.png') no-repeat;
+    background-position-x: -7rem;
+}
+
+.icon-box3 {
+    position: absolute;
+    top: 0;
+    left: 65rem;
+    display: block;
+    width: 8rem;
+    height: 8.2rem;
+    background: url('../images/link_icon.png') no-repeat;
+    background-position-x: -15.1rem;
+}
+
+.icon-box4 {
+    position: absolute;
+    top: -0.7rem;
+    right: 10rem;
+    display: block;
+    width: 8rem;
+    height: 8.2rem;
+    background: url('../images/link_icon.png') no-repeat;
+    background-position-x: -22rem;
+}
+
+.ic-list {}
+
+.ic-list li {
+    float: left;
+}
+
+.ic-list li a {
+    font-family: 'Noto Sans KR';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #393839;
+    margin-right: 15.8rem;
+}
+
+.ic1 {
+    position: absolute;
+    top: 10rem;
+    left: 8.7rem;
+    display: block;
+}
+
+.ic2 {
+    position: absolute;
+    top: 10rem;
+    left: 31rem;
+    display: block;
+}
+
+.ic3 {
+    position: absolute;
+    top: 10rem;
+    right: 17.2rem;
+    display: block;
+}
+
+.ic4 {
+    position: absolute;
+    top: 9.9rem;
+    right: -4.5rem;
+    display: block;
+}
+
+.ic1:hover {
+    color: #cd9734;
+}
+
+.ic2:hover {
+    color: #cd9734;
+}
+
+.ic3:hover {
+    color: #cd9734;
+}
+
+.ic4:hover {
+    color: #cd9734;
+}
+
+/* 하단영역 */
+.footer {
+    position: relative;
+    display: block;
+    height: 18.5rem;
+}
+
+.footer .container {
+    position: relative;
+    display: block;
+}
+
+.f-top {}
+
+.chanel-left {
+    float: left;
+}
+
+.newroads-right {
+    float: right;
+}
+
+.f-bottom {}
