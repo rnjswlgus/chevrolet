@@ -1,6 +1,8 @@
 window.onload = function() {
     $(document).ready(function() {
 
+        AOS.init();
+
         //모달창
         let modal = $('.modal');
         let modal_cont = $('.modal-cont');
